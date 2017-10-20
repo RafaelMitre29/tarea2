@@ -1,0 +1,149 @@
+;
+/*
+  Comentario
+  de
+  varias
+  líneas
+  clase (modelo a seguir/concepto) 
+  Bebida alcoholica
+
+objeto (representacion fisica) 
+cerveza
+
+metodos ( lo que hace) 
+emborracha marea desinhibe
+
+atributos (caracteristicas) 
+espumosa amarga fresca
+
+Bebida alcoholica
+
+cerveza
+
+emborracha marea desinhibe
+
+espumosa amarga fresca
+*/
+
+// Comentario de una línea
+
+
+  
+   const alcohol = {
+    nombre: 'chela',
+    gradodealcohol: 5,
+    marea: true,
+    marca: 'indio',
+    tipo: 'oscura',
+    emborracha: function () {
+      c('bien pedo!!!')
+    },
+    marea: function (efecto = 'tecaes') {
+      c(`${this.nombre} donde ${alsuelo}`)
+    },
+    desinhibe: function (imagen) {
+      document.write(`<img src="${imagen}">`)
+    }
+  }
+
+  c(
+    chela,
+   chela.nombre,
+    chela.gradodealcohol,
+    chela.marea,
+    chela.marca,
+    chela.tipo
+  )
+
+  perro.emborracha()
+  perro.marea()
+  perro.marea('tecaes')
+  perro.desinhibe('https://i2.wp.com/www.liquorlab.com.mx/wp-content/uploads/2015/10/indio-botella.jpeg?fit=460%2C440')
+
+  const chela2 = {
+    nombre: 'michelada',
+    gradodealcohol: 6,
+    marea: true,
+    marca: 'sol',
+    tipo: 'clara',
+    emborracha: function () {
+      c('después de varias!!!')
+    },
+    marea: function (efecto = 'muyjuerte') {
+      c(`${this.nombre} donde ${camavoladora}`)
+    },
+    desinhibe: function (imagen) {
+      document.write(`<img src="${imagen}">`)
+    }
+  }
+
+  c(
+    chela2,
+    chela2.nombre,
+    chela2.gradodealcohol,
+    chela2.marea,
+    chela2.marca,
+    chela2.tipo
+  )
+
+  perro2.emborracha()
+  perro2.marea()
+  perro2.marea('muyjuerte')
+  perro2.desinhibe('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Michelada_con_chile.jpg/245px-Michelada_con_chile.jpg')
+})(console.log);
+
+/* Clases */
+(function (c) {
+  /* Una clase es un modelo a seguir, un machote */
+  class Chela {
+    //El constructor es un método especial que se ejecuta en el momento de instanciar la clase
+    constructor (nombre, gradodealcohol, marea, marca, tipo) {
+      //Definición de los Atributos de mi clase
+      this.nombre = nombre
+      this.gradodealcohol = gradodealcohol
+      this.marea = marea
+      this.marca = marca
+      this.tipo = tipo
+    }
+
+    //Definición de los métodos de mi clase
+    emborracha () {
+      c('Salud!!!')
+    }
+
+    marea (efecto = 'depende cuantas tomes') {
+      c(`${this.nombre} cuantas ${unasdiez}`)
+    }
+
+    desinhibe (imagen) {
+      document.write(`<img src="${imagen}">`)
+    }
+  }
+
+  //La palabra new me permite crear o INSTANCIAR un objeto de un tipo determinado de clase
+  const caguama = new Chela('caguama', 3, false, 'victoria', 'oscura')
+  const tonayan = new Perro('tonayan', 7, true, 'tonayan', 'de caña')
+
+  c(
+    caguama,
+    caguama.nombre,
+    caguama.gradodealcohol,
+    caguama.marea,
+    caguama.marca,
+    caguama.tipo,
+    tonayan,
+    tonayan.nombre,
+    tonayan.gradodealcohol,
+    tonayan.marea,
+    tonayan.marca,
+    tonayan.tipo,
+  )
+
+  caguama.emborracha()
+  caguama.marea()
+ caguama.desinhibe('https://www.google.com.mx/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwie29-tyP_WAhXphlQKHe_pAc8QjBwIBA&url=http%3A%2F%2Fwww.notimundo.com.mx%2Fwp-content%2Fuploads%2F2017%2F02%2Fcaguamas-sudada1.jpg&psig=AOvVaw3bMu-EYnoPyn_GXbL2oSoy&ust=1508601399581301')
+
+  tonayan.emborracha()
+  tonayan.marea()
+  tonayan.desinhibe('https://assets.metrolatam.com/mx/2017/03/03/1506593_764162460279329_430394972_n-1200x800.jpg')
+})(console.log);
